@@ -2,7 +2,7 @@
 /*!
 \file   lib.cpp
 \author Thomas Breuer
-\date   11.03.2011
+\date   06.03.2016
 
 \brief Summary of complete library code
 */

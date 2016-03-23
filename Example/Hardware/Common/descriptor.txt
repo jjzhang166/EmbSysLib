@@ -1,0 +1,40 @@
+>//
+>// USB Descriptor File
+>//
+
+[Device]
+    Version         = 0x0200
+    MaxPacketSize   = 64
+    VendorID        = 0x0023
+    ProductID       = 0x1000
+    Device          = 0x0100
+    ManufacturerStr = 'H-BRS'
+    ProductStr      = 'EmbCppLib'
+    SerialNumberStr = 'SN0001'
+
+[Configuration]
+    ConfigurationStr = 'DEMO'   
+    SelfPowered      = 0
+    RemoteWakeup     = 0
+    MaxPower         = 100
+
+    [Interface]
+        InterfaceStr = 'Device 1'
+        Class        = VENDOR_SPECIFIC_CLASS
+        SubClass     = 0
+        Protocol     = 0
+
+        [Endpoint]
+            Address       = 2
+            Direction     = IN    
+            Attributes    = INTERRUPT_ENDPOINT    
+            MaxPacketSize = 64
+            Interval      = 10
+
+        [Endpoint]
+            Address       = 3
+            Direction     = OUT    
+            Attributes    = INTERRUPT_ENDPOINT   
+            MaxPacketSize = 64
+            Interval      = 10
+

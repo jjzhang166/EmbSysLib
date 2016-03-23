@@ -1,12 +1,29 @@
 //*******************************************************************
 /*!
 \file   Device.h
-\author Thomas Breuer
-\date   06.03.2016
+\author Thomas Breuer (Bonn-Rhein-Sieg University of Applied Sciences)
+\date   23.03.2016
+
+This file is released under the MIT License.
 
 \brief Device header files
 */
 
 //*******************************************************************
+// Device/Analog
+//*******************************************************************
+#include "Analog/devAnalogInADC.h"
+#include "Analog/devAnalogOutDAC.h"
+#include "Analog/devAnalogOutPWM.h"
+
+//*******************************************************************
+// Device/Digital
+//*******************************************************************
+#include "Digital/devDigital.h"
+
+//*******************************************************************
+// Device/TextIO
+//*******************************************************************
+#include "TextIO/devTextIO_UART.h"
 
 //EOF

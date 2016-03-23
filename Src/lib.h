@@ -1,8 +1,10 @@
 //*******************************************************************
 /*!
 \file   lib.h
-\author Thomas Breuer
-\date   06.03.2016
+\author Thomas Breuer (Bonn-Rhein-Sieg University of Applied Sciences)
+\date   23.03.2016
+
+This file is released under the MIT License.
 
 \brief  Library main include file
 */
@@ -12,5 +14,29 @@
 #define _LIB_H
 
 //*******************************************************************
+// Hardware
+//*******************************************************************
+#include "Hardware/Hardware.h"
+
+//*******************************************************************
+// Std
+//*******************************************************************
+#include "Std/Std.h"
+#include "Std/CRC.h"
+#include "Std/List.h"
+#include "Std/Fifo.h"
+#include "Std/SharedMem.h"
+#include "Std/DataPointer.h"
+#include "Std/Timer.h"
+
+//*******************************************************************
+// Device
+//*******************************************************************
+#include "Device/Device.h"
+
+//*******************************************************************
+// Task
+//*******************************************************************
+#include "Task/TaskHandler.h"
 
 #endif

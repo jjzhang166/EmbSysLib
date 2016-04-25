@@ -107,6 +107,9 @@ BYTE cHwSPImaster_N::transceiveByte( BYTE data )
 
   // start transmission
   ptr->DR = data;
+  
+  // wait until transmission buffer empty
+  while( !(ptr->SR & SPI_SR_TXE) );
 
   // wait until transmission completed
   while( (ptr->SR & SPI_SR_BSY) );

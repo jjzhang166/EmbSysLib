@@ -14,6 +14,7 @@ This file is released under the MIT License.
 //*******************************************************************
 #include "Hardware/Common/ADC.cpp"
 #include "Hardware/Common/DAC.cpp"
+#include "Hardware/Common/Display.cpp"
 #include "Hardware/Common/Encoder.cpp"
 #include "Hardware/Common/I2Cmaster.cpp"
 #include "Hardware/Common/Memory.cpp"
@@ -32,7 +33,6 @@ This file is released under the MIT License.
 //*******************************************************************
 // Hardware/Peripheral
 //*******************************************************************
-
-// under construction ...
+#include "Hardware/Peripheral/Disp_DIP204spi.cpp"
 
 // EOF

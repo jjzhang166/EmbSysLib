@@ -5,8 +5,6 @@
 \date   23.03.2016
 
 This file is released under the MIT License.
-
-This file is released under the MIT License.
 */
 
 //*******************************************************************
@@ -52,6 +50,15 @@ class cDevAnalogIn : public cDevAnalog
         \return Calculated ADC value
     */
     virtual operator float( void );
+
+    //---------------------------------------------------------------
+    /*! Two point calibration
+    */
+    void calibrate( float x1, 
+                    float y1,
+                    float x2,
+                    float y2
+                   );
 
     //---------------------------------------------------------------
     /*! Get the raw input value 

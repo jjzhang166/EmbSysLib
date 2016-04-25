@@ -25,6 +25,17 @@ This file is released under the MIT License.
 #include "Device/Digital/devDigital.cpp"
 
 //*******************************************************************
+// Device/Display
+//*******************************************************************
+#include "Device/Display/devDisplay.cpp"
+#include "Device/Display/devDisplayChar.cpp"
+
+//*******************************************************************
+// DEVICE/MEMORY
+//*******************************************************************
+#include "Device/Memory/devMemory.cpp"
+
+//*******************************************************************
 // Device/TextIO
 //*******************************************************************
 #include "Device/TextIO/devTextIO.cpp"

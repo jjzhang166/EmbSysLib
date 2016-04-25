@@ -42,7 +42,6 @@ void cHwSPImaster::Device::transceive( BYTE   *data,
   for( WORD i = 0; i < size; i++ )
   {
     data[i] = spi.transceiveByte(data[i]);
-    //for(int i=0;i<100;i++);
   }
   stop();
 

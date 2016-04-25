@@ -39,4 +39,18 @@ inline cDevAnalogIn::operator float( void )
   return( get() );
 }
 
+//-------------------------------------------------------------------
+void cDevAnalogIn::calibrate( float x1, 
+                              float y1,
+                              float x2,
+                              float y2
+                            )
+{
+  if( x1 != x2 ) 
+  {
+    gain = (y2-y1)/(x2-x1);
+    offs = y1 - gain*x1;
+  }
+}
+
 //EOF

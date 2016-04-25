@@ -59,4 +59,8 @@ template <class T> inline T RANGE( T x, T min, T max )
   return( x );
 }
 
+//*******************************************************************
+//! a well known nature constant ...
+const float PI = (float)3.1415926535897932384626433832795;
+
 #endif

@@ -54,26 +54,47 @@
 //#include "Hardware/MCU/STM32F4xx/cSystem_MCU.cpp"           // ok
 
 //-------------------------------------------------------------------
+// Hardware - Peripheral
+//-------------------------------------------------------------------
+// Cross mapping of supported peripheral hardware and sample code
 //
-//                                            Test:  +STM32L1
+// legend:
+//
+//    yes    target supports the peripheral device
+//    no     no support
+//    no*    not yet, but maybe in future
+//    nt     not tested
+//    (y)    yes, but not tested or properly configured
+//
+//                                                Target:  +STM32L1
+//                                                         |   +STM32F4
+//                                                         |   |
+//                                                         |   |
+//#include "Hardware/Peripheral/cHwDisp_DIP204spi.cpp" // ok  ok
+
+//-------------------------------------------------------------------
+//
+//                                          Target:  +STM32L1
 //                                                   |   +STM32F4
 //                                                   |   |
 //                                                   |   |
 // Device                                            |   |
-//                                                   |   |
+// ------                                            |   |
 //#include "Device/cDevAnalog.cpp"               // ok  ok 
 //#include "Device/cDevDigital.cpp"              // ok  ok 
+//#include "Device/cDevDisplayChar.cpp"          // nt  nt 
+//
+#include "Device/cDevMemoryFlash.cpp"          // nt  nt 
 //#include "Device/cDevTextIO.cpp"               // ok  ok 
 //                                                   |   |
 // Module                                            |   |
-//                                                   |   |
+// ------                                            |   |
 //#include "Module/IPC/cIPC.cpp"                 // ok  ok 
 //#include "Module/RTOS/cRTOS.cpp"               // ok  ok 
 //#include "Module/USB/cUSBinterfClassVSC.cpp"   // ok  ok 
 //                                                   |   |
 // Std                                               |   |
-//                                                   |   |
-//
+// ---                                               |   |
 //#include "Std/cCRC.cpp"                        // ok  ok 
 //#include "Std/cFifo.cpp"                       // ok  ok 
 //#include "Std/cList.cpp"                       // ok  ok 
@@ -81,7 +102,7 @@
 //#include "Std/cTimer.cpp"                      // ok  ok 
 //                                                   |   |
 // Task                                              |   |
-//                                                   |   |
+// ----                                              |   |
 //#include "Task/cTaskHandler.cpp"               // ok  ok 
 
 //EOF

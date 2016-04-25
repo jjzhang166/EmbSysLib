@@ -21,14 +21,14 @@ This file is released under the MIT License.
 //*******************************************************************
 // Hardware/Peripheral
 //*******************************************************************
-
-// under construction ...
+#include "Hardware/Peripheral/Disp_DIP204spi.h"
 
 //*******************************************************************
 // Hardware/Common
 //*******************************************************************
 #include "Hardware/Common/ADC.h"
 #include "Hardware/Common/DAC.h"
+#include "Hardware/Common/Display.h"
 #include "Hardware/Common/Encoder.h"
 #include "Hardware/Common/I2Cmaster.h"
 #include "Hardware/Common/Memory.h"

@@ -74,10 +74,11 @@ class cHwSPImaster
             \param CSin  Reference to chip select pin
         */
         Device( cHwSPImaster &spiIn,
-                cHwPort::Pin &CSin )
+                cHwPort      &CS_port_In,
+                BYTE          CS_pin_In )
         
         : spi( spiIn ),
-          CS( CSin )
+          CS( CS_port_In, CS_pin_In )
         {
           CS.setMode( cHwPort::Out );
           CS.set();
@@ -166,7 +167,7 @@ class cHwSPImaster
       public:
         //-----------------------------------------------------------
         cHwSPImaster &spi;
-        cHwPort::Pin &CS;
+        cHwPort::Pin  CS;
     };
 
   protected:

@@ -22,6 +22,18 @@ This file is released under the MIT License.
 #include "Digital/devDigital.h"
 
 //*******************************************************************
+// Device/Display
+//*******************************************************************
+#include "Device/Display/devDisplay.h"
+#include "Device/Display/devDisplayChar.h"
+
+//*******************************************************************
+// DEVICE/MEMORY
+//*******************************************************************
+#include "Device/Memory/devMemory.h"
+#include "Device/Memory/devMemoryFlash.h"
+
+//*******************************************************************
 // Device/TextIO
 //*******************************************************************
 #include "TextIO/devTextIO_UART.h"

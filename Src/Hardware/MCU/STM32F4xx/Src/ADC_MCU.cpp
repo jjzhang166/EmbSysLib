@@ -58,9 +58,9 @@ void cHwADC_0::configCh( BYTE ch )
     case  8: cHwPinConfig::set( cHwPinConfig::ADC12_IN8,   cHwPinConfig::ANALOG ); break;
     case  9: cHwPinConfig::set( cHwPinConfig::ADC12_IN9,   cHwPinConfig::ANALOG ); break;
     case 10: cHwPinConfig::set( cHwPinConfig::ADC123_IN10, cHwPinConfig::ANALOG ); break;
-    case 11: cHwPinConfig::set( cHwPinConfig::ADC123_IN10, cHwPinConfig::ANALOG ); break;
-    case 12: cHwPinConfig::set( cHwPinConfig::ADC123_IN10, cHwPinConfig::ANALOG ); break;
-    case 13: cHwPinConfig::set( cHwPinConfig::ADC123_IN10, cHwPinConfig::ANALOG ); break;
+    case 11: cHwPinConfig::set( cHwPinConfig::ADC123_IN11, cHwPinConfig::ANALOG ); break;
+    case 12: cHwPinConfig::set( cHwPinConfig::ADC123_IN12, cHwPinConfig::ANALOG ); break;
+    case 13: cHwPinConfig::set( cHwPinConfig::ADC123_IN13, cHwPinConfig::ANALOG ); break;
     case 14: cHwPinConfig::set( cHwPinConfig::ADC3_IN14,   cHwPinConfig::ANALOG ); break;
     case 15: cHwPinConfig::set( cHwPinConfig::ADC3_IN15,   cHwPinConfig::ANALOG ); break;
 
